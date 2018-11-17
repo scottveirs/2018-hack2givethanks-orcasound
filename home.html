@@ -52,16 +52,18 @@
 
     <section class="slide">
      <h2>Orcasound's network, new nodes and app</h2>
+     <center>
      <table>
-      	<tr align="center">
-      		<td><img src="content/map-network.png" height="400" hspace="10"></td>
-            <td><img src="content/node-box.png" height="400" hspace="10"></td>
-            <td><img src="content/beta-site-osl-square.png" height="400"></td>
+      	<tr>
+      		<td><img src="content/map-network.png" height="400"></td>
+     	        <td><img src="content/node-box.png" height="400"></td>
+       	        <td><img src="content/beta-site-osl-square.png" height="400"></td>
         </tr>
     </table>
+    </center>
   	<h3>15 years of citizen scientists listening for whales in the Salish Sea</h3>
   	<div>
-   	Thanks to all the backers of the <a href="https://www.kickstarter.com/projects/sveirs/orcasound-listen-for-whales">2017 Kickstarter</a>, plus our app key developers/designers to date, and growing team of dedicated hackers:<br>
+   	Thanks to the <a href="https://www.kickstarter.com/projects/sveirs/orcasound-listen-for-whales">2017 Kickstarter</a> backers, plus our app key developers/designers to date, and the growing team of dedicated hackers: 
    	Paul Cretu, Skander Mzali, Steve Hicks, Tyler Crisafulli, Val Veirs, Nóra Mészáros, and Liam Reese<br>
    	<center>
    	<a href="http://dev.orcasound.net">Beta-test at dev.orcasound.net!</a>
@@ -71,21 +73,38 @@
 
     <section class="slide">
       <h2>Orcasound road map</h2>
-	<h4>End to end app launched on Nov. 1, 2018 (above gray dashed line)</h4>
+	<h4>App launched on Nov. 1, 2018 (above gray dashed line)</h4>
       <img src="content/hydrophone-headphone-roadmap.png">
-	<p>
-	<font color="black">Completed in Civic Hackathon</font> | 
-	<font color="green">Under development or in beta-testing</font> | 
+	<h5>
+	<center>
+	Legend: 
+	<font color="black">Live or prototyped</font> | 
+	<font color="green">In development or beta-testing</font> | 
 	<font color="red">Challenges available today!</font>
-	</p>
+	</center>
+	</h5>
     </section>
 
     <section class="slide">
       <h2>Orcasound hackathon challenges</h2>
         <ul>
-        <li>Finish new HTML5 version of orca call catalog (<a href="http://www.orcasound.net/FordOsborneVocabulary/_SouthernVocabularyTable.html">old version</a>)
-        <li>Build training data set of killer whale signals for machine learning
-        <li>Discuss and implement architecture for machine learning
+	<li>Back-end enhancements</li>
+	  <ul>
+	  <li>Help Sam build admin interface (authentication, detection moderation, CMS, notification webhooks)</li>
+	  <li>Continue development of real-time spectrogram generation</li>
+	  <li>Use FLAC files to generate a time series of noise levels for each node.</li>
+	  </ul>
+	<li>Improve and test new UI/UX</li>
+	  <ul>
+          <li>Finish new HTML5 version of orca call catalog (<a href="http://www.orcasound.net/FordOsborneVocabulary/_SouthernVocabularyTable.html">old version</a>)</li>
+	  <li>Design and test UI/UX for citizen scientist interactivity ("I hear something" button)</li>
+	  <li>Generate spectrograms and audio files for Zooniverse test project</li>
+	  <li>Try embedding a marinetraffic.com map on the beta site</li>
+	  <li>Improve profile of each node</li>
+	  </ul>
+	<li>Develop and test scheme for webhook registration and notifications via Twitter bot/etc.</li>
+        <li>Machine learning: implement architecture for machine learning; build training data set of killer whale signals</li>
+	<li>Refine and test the new upload script (Python/boto + RaspberryPi/Linux/Jack)</li>
         </ul>
     </section>
 
