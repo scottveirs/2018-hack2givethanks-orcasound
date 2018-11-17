@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Orcasound at the 2018 Hack to Give Thanks hackathon</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      	<center>
+	      	<h2>Orcasound -- Listen for Whales</h2>
+	      	<img src="content/orca-ferry.png">
+	      	<h3>Scott Veirs, Orcasound Hydrophone Network</h3>
+	      	<h4>Hack to Give Thanks, November 17, 2018</h4>
+	      	<div>
+	      		<audio controls>
+	            <source src="content/clear-calls-clicks.mp3" type="audio/mpeg">
+	      		</audio>
+			</div>
+	  		Slides at: <a href="http://orcasound.net/data/talks/2018-hack2givethanks-orcasound">orcasound.net/data/talks/</a>
+  		</center>
+    </section>
+
+    <section class="slide">
+     <h2>Orcasound's network, new nodes and app</h2>
+     <table>
+      	<tr align="center">
+      		<td><img src="content/map-network.png" height="400" hspace="10"></td>
+            <td><img src="content/node-box.png" height="400" hspace="10"></td>
+            <td><img src="content/app-w-activity.png" height="400"></td>
+        </tr>
+    </table>
+  	<h3>15 years of citizen scientists listening for whales in the Salish Sea</h3>
+  	<div>
+   	Thanks to all the backers of the <a href="https://www.kickstarter.com/projects/sveirs/orcasound-listen-for-whales">2017 Kickstarter</a>, plus our app key developers/designers to date, and growing team of dedicated hackers:<br>
+   	Paul Cretu, Skander Mzali, Steve Hicks, Tyler Crisafulli, Nóra Mészáros, and Liam Reese<br>
+   	<center>
+   	<a href="http://dev.orcasound.net">Beta-test at dev.orcasound.net!</a>
+	</center>
+	</div>
+    </section>
+
+    <section class="slide">
+      <h2>Orcasound road map</h2>
+      <img src="content/hydrophone-headphone-roadmap.png">
+    </section>
+
+    <section class="slide">
+      <h2>Orcasound hackathon challenges</h2>
+        <ul>
+        <li>Finish new HTML5 version of orca call catalog (<a href="http://www.orcasound.net/FordOsborneVocabulary/_SouthernVocabularyTable.html">old version</a>)
+        <li>Build training data set of killer whale signals for machine learning
+        <li>Discuss and implement architecture for machine learning
+        </ul>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+</div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
